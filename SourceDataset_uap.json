@@ -1,0 +1,65 @@
+{
+	"name": "SourceDataset_uap",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "chicagoSafetyData",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Safety/Release",
+				"container": "citydatacontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "dataType",
+				"type": "UTF8"
+			},
+			{
+				"name": "dataSubtype",
+				"type": "UTF8"
+			},
+			{
+				"name": "dateTime",
+				"type": "INT96"
+			},
+			{
+				"name": "category",
+				"type": "UTF8"
+			},
+			{
+				"name": "subcategory",
+				"type": "UTF8"
+			},
+			{
+				"name": "status",
+				"type": "UTF8"
+			},
+			{
+				"name": "address",
+				"type": "UTF8"
+			},
+			{
+				"name": "latitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "longitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "source",
+				"type": "UTF8"
+			},
+			{
+				"name": "extendedProperties",
+				"type": "UTF8"
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "DestinationDataset_xrt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "IATA_code",
+				"type": "varchar"
+			},
+			{
+				"name": "ICAO_code",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Planes"
+		}
+	}
+}

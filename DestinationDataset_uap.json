@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_uap",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "chicago"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
